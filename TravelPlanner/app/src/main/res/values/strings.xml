@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TravelPlanner</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_show_destionation">Map</string>
+    <string name="facebook_app_id">855418121656099</string>
+    <string name="fb_login_protocol_scheme">fb855418121656099</string>
+
+</resources>

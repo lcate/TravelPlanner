@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.travelplanner">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/travel"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PackingActivity"
+            android:label="Don't forget!"
+            android:parentActivityName=".DetailsActivity"></activity>
+        <activity android:name=".LoginActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ShowDestionationActivity"
+            android:label="@string/title_activity_show_destionation" />
+        <activity android:name=".SelectDestinationActivity" />
+        <activity
+            android:name=".AddPackageActivity"
+            android:label="Packing list"
+            android:parentActivityName=".AddDetailsActivity" />
+        <activity
+            android:name=".AddDetailsActivity"
+            android:label="Add details about your trip" />
+        <activity
+            android:name=".DetailsActivity"
+            android:label="Details about plan"
+            android:parentActivityName=".PlannerActivity" />
+
+        <activity android:name=".PlannerActivity"
+            android:label="Planner"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+    </application>
+
+</manifest>
